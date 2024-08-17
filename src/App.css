@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+/* .App {
+  display: flag;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0%;
+  padding: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TitleSection {
+  background-color: #5D89FF;
+  width: 100%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.TitleSection input {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.TitleSection button {
+  width: 200px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 10px;
+  padding-left: 10px;
+  border: 1px solid;
+  color: white;
+  background-color: #006cbf;
+}
+
+.TitleSection button:hover {
+  cursor: pointer;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.DisplaySection h4, h3 {
+  margin: 5px;
+
+
+}
+ */
+
+ .App {
+  text-align: center;
+  background-color: #6699ff;
+  padding: 25px;
+}
+
+.TitleSection h1 {
+  margin-bottom: 20px;
+  padding: 70px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  text-size-adjust: 10px;
+}
+
+.TitleSection input {
+  border-radius: 4px;
+}
+
+.PokemonCard {
+  display: inline-block;
+  background-color: whitesmoke;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+}
+
+.PokemonCard img {
+  width: 120px;
+  height: 120px;
+}
+
+.Pagination {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+}
+
+.Pagination button {
+  justify-content: center;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.DisplayDetails {
+  text-align: center;
+  justify-content: center;
+}
+
+.Pagination button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
 }
